@@ -2,6 +2,8 @@ PODS:
   - Aspects (1.4.1)
   - JDHotFix (0.1.0):
     - Aspects
+    - SSZipArchive
+  - SSZipArchive (2.4.3)
 
 DEPENDENCIES:
   - JDHotFix (from `../`)
@@ -9,6 +11,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Aspects
+    - SSZipArchive
 
 EXTERNAL SOURCES:
   JDHotFix:
@@ -16,7 +19,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  JDHotFix: 29581388db907138b527fe8676b8fe5eb0c1ce76
+  JDHotFix: 87457d9877b61bd6b50cb72367f0b8453d808460
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
 PODFILE CHECKSUM: 8d034108789be4b0d1337cf24a16231e3d1aaec5
 

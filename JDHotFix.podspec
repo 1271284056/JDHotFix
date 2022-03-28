@@ -32,6 +32,8 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'JDHotFix/Classes/**/*'
   s.dependency 'Aspects'
+  s.dependency 'SSZipArchive'
+  
 
   # s.resource_bundles = {
   #   'JDHotFix' => ['JDHotFix/Assets/*.png']

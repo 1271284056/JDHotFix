@@ -10,9 +10,9 @@
 #endif
 #endif
 
-#import "JDHotfix.h"
-#import "JDHotFixConfig.h"
+#import "SSZipArchive.h"
+#import "SSZipCommon.h"
 
-FOUNDATION_EXPORT double JDHotFixVersionNumber;
-FOUNDATION_EXPORT const unsigned char JDHotFixVersionString[];
+FOUNDATION_EXPORT double SSZipArchiveVersionNumber;
+FOUNDATION_EXPORT const unsigned char SSZipArchiveVersionString[];
 

@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		ACB71D65C404F28A733777F6 /* Pods_JDHotFix_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C312457119FAA776BFA3E776 /* Pods_JDHotFix_Example.framework */; };
+		E6E966CB27F197D2000485C3 /* hotfix.js in Resources */ = {isa = PBXBuildFile; fileRef = E6E966CA27F197D2000485C3 /* hotfix.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		C312457119FAA776BFA3E776 /* Pods_JDHotFix_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JDHotFix_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB4954EFB2DE6A88342D130 /* Pods-JDHotFix_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDHotFix_Example.release.xcconfig"; path = "Target Support Files/Pods-JDHotFix_Example/Pods-JDHotFix_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DFB0DC930C1A1BC73C91775C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E6E966CA27F197D2000485C3 /* hotfix.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hotfix.js; sourceTree = "<group>"; };
 		EAD7C2569E177727CDAEB269 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 			children = (
 				6003F59C195388D20070C39A /* JDAppDelegate.h */,
 				6003F59D195388D20070C39A /* JDAppDelegate.m */,
+				E6E966CA27F197D2000485C3 /* hotfix.js */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* JDViewController.h */,
 				6003F5A6195388D20070C39A /* JDViewController.m */,
@@ -280,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E966CB27F197D2000485C3 /* hotfix.js in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -307,11 +311,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-JDHotFix_Example/Pods-JDHotFix_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
 				"${BUILT_PRODUCTS_DIR}/JDHotFix/JDHotFix.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JDHotFix.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

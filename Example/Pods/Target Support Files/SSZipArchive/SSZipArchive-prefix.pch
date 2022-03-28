@@ -10,9 +10,3 @@
 #endif
 #endif
 
-#import "JDHotfix.h"
-#import "JDHotFixConfig.h"
-
-FOUNDATION_EXPORT double JDHotFixVersionNumber;
-FOUNDATION_EXPORT const unsigned char JDHotFixVersionString[];
-

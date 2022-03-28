@@ -3,25 +3,25 @@
 // Copyright (c) 2019 lanjingren. All rights reserved.
 //
 
-#import "MPHotfix.h"
+#import "JDHotfix.h"
 #import <objc/runtime.h>
 #import <JavaScriptCore/JavaScriptCore.h>
 #import <Aspects/Aspects.h>
 
-static MPHotfix *fixManager = nil;
+static JDHotfix *fixManager = nil;
 
-@interface MPHotfix()
+@interface JDHotfix()
 
 @property(nonatomic, copy)JSContext *context;
 
 @end
 
-@implementation MPHotfix
+@implementation JDHotfix
 
 + (instancetype)shared {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        fixManager = [[MPHotfix alloc] init];
+        fixManager = [[JDHotfix alloc] init];
     });
     return fixManager;
 }
