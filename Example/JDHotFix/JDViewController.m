@@ -25,7 +25,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self test1];
+    [self test1:@"测试1"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,14 +34,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)test1 {
+- (void)test1:(NSString *)str {
     
     NSLog(@"test1111--->");
 }
 
-- (void)test2 {
+- (void)test2:(NSString *)str {
     
-    NSLog(@"test2222--->");
+    NSLog(@"test2222---> ++ %@", str);
 }
 
 @end

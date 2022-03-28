@@ -15,12 +15,14 @@
 //	}
 //});
 
-fixeMethodAfter("JDViewController", false, "test1", function(instance, originInvocation, originArguments) {
-    console.log("hotfix执行了-->")
-//        var model0 = originArguments[0]
-        runInstanceMethod(instance, "test2", [])
-    //执行原来的方法
-        runInvocation(originInvocation)
+fixeMethodAfter("JDViewController", false, "test1:", function(instance, originInvocation, originArguments) {
+    //取出test1 方法第一个参数
+    var argument0 = originArguments[0]
+    console.log("hotfix执行了-->" + argument0)
+    //参数传递给方法2 test2:  没有参数传[]
+    runInstanceMethod(instance, "test2:", [argument0])
+    //执行原来的test1:方法
+    runInvocation(originInvocation)
 
 })
 
