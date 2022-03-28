@@ -20,6 +20,7 @@
     [super viewDidLoad];
     JDHotFixConfig *config = [[JDHotFixConfig alloc] init];
     [config configHotFix];
+    //hotfix方法调用后的方法才可以被热修复
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
