@@ -1,0 +1,6 @@
+framework module JDHotFix {
+  umbrella header "JDHotFix-umbrella.h"
+
+  export *
+  module * { export * }
+}

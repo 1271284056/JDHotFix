@@ -1,0 +1,23 @@
+PODS:
+  - Aspects (1.4.1)
+  - JDHotFix (0.1.0):
+    - Aspects
+
+DEPENDENCIES:
+  - JDHotFix (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Aspects
+
+EXTERNAL SOURCES:
+  JDHotFix:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  JDHotFix: 29581388db907138b527fe8676b8fe5eb0c1ce76
+
+PODFILE CHECKSUM: 8d034108789be4b0d1337cf24a16231e3d1aaec5
+
+COCOAPODS: 1.11.2

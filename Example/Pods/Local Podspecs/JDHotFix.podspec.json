@@ -1,0 +1,27 @@
+{
+  "name": "JDHotFix",
+  "version": "0.1.0",
+  "summary": "A short description of JDHotFix.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhangjiangdong/JDHotFix",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhangjiangdong": "1271284056@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zhangjiangdong/JDHotFix.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "JDHotFix/Classes/**/*",
+  "dependencies": {
+    "Aspects": [
+
+    ]
+  }
+}
