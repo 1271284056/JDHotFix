@@ -57,26 +57,9 @@ fixMethodReplace('MPMineWorksView', false, 'onCellClick:', function(instance, or
 自己公司前端给一个上传zip文件生成地址的网页,zip拖拽上去后 拿到地址
 
 4 热修文件针对自己账号看是否生效
- https://biz.xxxxx.cn/chain   打开热修配置网址
+ https://.xxxxx.cn   打开热修配置网址
 选择 app灰度配置
 在发布之前可以针对userId测试热修是否生效
-选择 hot_fix_info_user  ,uid_list添加自己的现网用户id
-hf_zip_url  添加刚才导出的路径
-然后用自己手机看热修是否生效
-可以接口抓包看下发的hf_zip_url 地址是否对
-{
-                        "rule": {
-                                "hf_enable": 1,
-                                "hf_zip_url": "https:\/\/ss2.meipian.me\/app\/hotfix\/7.0.3_main.js.zip”
-                        },
-                        "type": "4"
-                }, 
-看  hf_zip_url 下发地址是否是你刚才填写的链接.
-
-
-5 热修上线
-右上角- 新增热修 创建文件 hot_fix_info_720,填写版本号和链接,最后点击启用
-
 
 如果同一个版本又加新的热修
 第一版是 7.2.0_main.js, 如果有升级热修文件 热修文件名main后面+1,比如: 7.2.0_main1.js. 新文件要包含原来的热修代码,自己新的热修代码写到下面
