@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047E38F1281FECBD009D7BA1 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E38F0281FECBD009D7BA1 /* TestSwift.swift */; };
 		35B72E0CFEE8970D266F429A /* Pods_JDHotFix_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FF9DBF826B2BD52DD3FB1B /* Pods_JDHotFix_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		047E38EF281FECBD009D7BA1 /* JDHotFix_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JDHotFix_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		047E38F0281FECBD009D7BA1 /* TestSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 		05344ADF734CD5F0E0D5A0FF /* Pods-JDHotFix_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDHotFix_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JDHotFix_Tests/Pods-JDHotFix_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		330671111F1CDD9AF34E5515 /* Pods-JDHotFix_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDHotFix_Example.debug.xcconfig"; path = "Target Support Files/Pods-JDHotFix_Example/Pods-JDHotFix_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		57FF9DBF826B2BD52DD3FB1B /* Pods_JDHotFix_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JDHotFix_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +146,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				047E38F0281FECBD009D7BA1 /* TestSwift.swift */,
+				047E38EF281FECBD009D7BA1 /* JDHotFix_Example-Bridging-Header.h */,
 			);
 			name = "Example for JDHotFix";
 			path = JDHotFix;
@@ -252,6 +257,7 @@
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = U22842LLME;
+						LastSwiftMigration = 1330;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -378,6 +384,7 @@
 				6003F59E195388D20070C39A /* JDAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* JDViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				047E38F1281FECBD009D7BA1 /* TestSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,13 +512,17 @@
 			baseConfigurationReference = 330671111F1CDD9AF34E5515 /* Pods-JDHotFix_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = U22842LLME;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JDHotFix/JDHotFix-Prefix.pch";
 				INFOPLIST_FILE = "JDHotFix/JDHotFix-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JDHotFix/JDHotFix_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -522,13 +533,16 @@
 			baseConfigurationReference = CCB4954EFB2DE6A88342D130 /* Pods-JDHotFix_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = U22842LLME;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JDHotFix/JDHotFix-Prefix.pch";
 				INFOPLIST_FILE = "JDHotFix/JDHotFix-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JDHotFix/JDHotFix_Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -538,6 +552,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05344ADF734CD5F0E0D5A0FF /* Pods-JDHotFix_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -563,6 +578,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2C0944203BD2DAA9FCE6ECD /* Pods-JDHotFix_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

@@ -15,6 +15,16 @@
 //	}
 //});
 
+fixeMethodAfter("JDHotFix_Example.TestSwift", false, "test", function(instance, originInvocation, originArguments) {
+    //取出test1 方法第一个参数
+    console.log("TestSwift hotfix执行了-->")
+    //参数传递给方法2 test2:  没有参数传[]
+//    runInstanceMethod(instance, "test2:", [argument0])
+    //执行原来的test1:方法
+//    runInvocation(originInvocation)
+
+})
+
 fixeMethodAfter("JDViewController", false, "test1:", function(instance, originInvocation, originArguments) {
     //取出test1 方法第一个参数
     var argument0 = originArguments[0]

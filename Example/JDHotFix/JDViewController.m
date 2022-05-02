@@ -8,8 +8,10 @@
 
 #import "JDViewController.h"
 #import <JDHotFix/JDHotFixConfig.h>
+#import "JDHotFix_Example-Swift.h"
 
 @interface JDViewController ()
+@property (nonatomic, strong) TestSwift *testSwift;
 
 @end
 
@@ -18,6 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.testSwift = [TestSwift new];
     JDHotFixConfig *config = [[JDHotFixConfig alloc] init];
     [config configHotFix];
     //hotfix方法调用后的方法才可以被热修复
@@ -26,7 +29,10 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self test1:@"测试1"];
+//    [self test1:@"测试1"];
+    [self.testSwift test];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
